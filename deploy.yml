@@ -15,13 +15,13 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.email "your-email@example.com"
+          git config --global user.email "salyk0806@gmail.com"
           git config --global user.name "GitHub Actions Bot"
 
       - name: Push to GitLab Pages
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-          git remote add GitLab https://oauth2:${GITLAB_TOKEN}@gitlab.com/username/my-homework.git
+          git remote add GitLab https://oauth2:${GITLAB_TOKEN}@gitlab.com/rozaanddream/my-homework.git
           git push GitLab main --force
 
